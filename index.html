@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>FreeCodeCamp - Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul id="navbar-list">
+                <li><a href="#about-us" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#how-it-works" class="nav-link">Como Funciona</a></li>
+                <li><a href="#pricing" class="nav-link">Preços</a></li>
+            </ul>
+        </nav>
+        <!--Menu-Icon-->
+        <div class="menu-icon" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <!--Fim-Menu-Icon-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png" alt="" id="header-img">
+    </header>
+
+    <section id="section-form">
+        <h2 id="form-titulo">Aluguel de Carros e Motos</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" placeholder="Digite seu email" id="email"><br><br>
+            <input type="submit" id="submit" value="Inscreva-se">
+        </form>
+    </section>
+
+    <main id="content">
+        <section id="about-us">
+            <div class="desc">
+                <h2 class="desc-title">Automóveis de Qualidade</h2>
+                <p class="desc-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nibh convallis, mollis nibh at, aliquet justo. Pellentesque a quam placerat, faucibus elit sed, suscipit ex. Proin pretium arcu at gravida volutpat. Nullam nec sagittis lectus.</p>
+            </div>
+
+            <div class="desc">
+                <h2 class="desc-title">Aluguel Online</h2>
+                <p class="desc-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nibh convallis, mollis nibh at, aliquet justo. Pellentesque a quam placerat, faucibus elit sed, suscipit ex. Proin pretium arcu at gravida volutpat. Nullam nec sagittis lectus.</p>
+            </div>
+
+            <div class="desc">
+                <h2 class="desc-title">Preços Diferenciados</h2>
+                <p class="desc-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nibh convallis, mollis nibh at, aliquet justo. Pellentesque a quam placerat, faucibus elit sed, suscipit ex. Proin pretium arcu at gravida volutpat. Nullam nec sagittis lectus.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="product" id="ka-sedan">
+                <div class="level">Ford Ka Sedan</div>
+                <h2>R$300/dia</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Selecionar</button>
+              </div>
+
+              <div class="product" id="ka-hatch">
+                <div class="level">Ford Ka Hatch</div>
+                <h2>R$200/dia</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Selecionar</button>
+              </div>
+
+              <div class="product" id="ecosport">
+                <div class="level">Ford EcoSport</div>
+                <h2>R$600/dia</h2>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum dolor.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <button class="btn">Selecionar</button>
+              </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <ul id="footer-list">
+          <li><a class="footer-link" href="#">Privacidade</a></li>
+          <li><a class="footer-link" href="#">Termos</a></li>
+          <li><a class="footer-link" href="#">Contato</a></li>
+        </ul>
+        <span>Copyright 2022, Victor Senisse</span>
+      </footer>
+
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>        
+  </body>
+</html>
